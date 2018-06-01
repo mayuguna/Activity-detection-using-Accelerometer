@@ -45,8 +45,7 @@ Installation
 Dependencies
 ~~~~~~~~~~~~
 
-scikit-learn requires:
-
+Machine Learning Server requires:
 - Python (>= 2.7 or >= 3.4)
 - NumPy (>= 1.8.2)
 - SciPy (>= 0.13.3)
@@ -104,6 +103,13 @@ Configuring Web Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 The MachineLearning.java servlet in the project folder must be deployed in the web server. This file is required to invoke the machine learning server and create an input file in appropriate format(csv).
 
+
+
+How to Use
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Once flask server is up an running (server.py), it will listen to request on public ip. Once a request is recived to the server by invoking 0.0.0.0/predict, with the data file place in web server under the public folder, the server will extract fetures adn predict the activity. The response mesage will have the label id of the activity.
+Alternatively, the dbconfig.py file can be modified to point to the database server (assuming the server is a public instance) to read data directly from the database.
+Any application invoking a request using a json request format can be integrated with this server.
 
 
 Source code
