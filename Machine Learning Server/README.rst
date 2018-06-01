@@ -46,6 +46,7 @@ Dependencies
 ~~~~~~~~~~~~
 
 Machine Learning Server requires:
+
 - Python (>= 2.7 or >= 3.4)
 - NumPy (>= 1.8.2)
 - SciPy (>= 0.13.3)
