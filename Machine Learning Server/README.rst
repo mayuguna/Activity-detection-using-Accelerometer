@@ -111,6 +111,8 @@ Once flask server is up an running (server.py), it will listen to request on pub
 Alternatively, the dbconfig.py file can be modified to point to the database server (assuming the server is a public instance) to read data directly from the database.
 Any application invoking a request using a json request format can be integrated with this server.
 
+The machineLearning servlet can be invoked from client applications using "/Ml" once the servlet is deployed in the web server.
+
 
 Source code
 ~~~~~~~~~~~
