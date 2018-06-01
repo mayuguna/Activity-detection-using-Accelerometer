@@ -1,0 +1,130 @@
+.. -*- mode: rst -*-
+
+|Travis|_ |AppVeyor|_ |Codecov|_ |CircleCI|_ |Python27|_ |Python35|_ |PyPi|_ |DOI|_
+
+.. |Travis| image:: https://api.travis-ci.org/scikit-learn/scikit-learn.svg?branch=master
+.. _Travis: https://travis-ci.org/scikit-learn/scikit-learn
+
+.. |AppVeyor| image:: https://ci.appveyor.com/api/projects/status/github/scikit-learn/scikit-learn?branch=master&svg=true
+.. _AppVeyor: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/history
+
+.. |Codecov| image:: https://codecov.io/github/scikit-learn/scikit-learn/badge.svg?branch=master&service=github
+.. _Codecov: https://codecov.io/github/scikit-learn/scikit-learn?branch=master
+
+.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-learn/tree/master.svg?style=shield&circle-token=:circle-token
+.. _CircleCI: https://circleci.com/gh/scikit-learn/scikit-learn
+
+.. |Python27| image:: https://img.shields.io/badge/python-2.7-blue.svg
+.. _Python27: https://badge.fury.io/py/scikit-learn
+
+.. |Python35| image:: https://img.shields.io/badge/python-3.5-blue.svg
+.. _Python35: https://badge.fury.io/py/scikit-learn
+
+.. |PyPi| image:: https://badge.fury.io/py/scikit-learn.svg
+.. _PyPi: https://badge.fury.io/py/scikit-learn
+
+.. |DOI| image:: https://zenodo.org/badge/21369/scikit-learn/scikit-learn.svg
+.. _DOI: https://zenodo.org/badge/latestdoi/21369/scikit-learn/scikit-learn
+
+Introduction: Activity Recognition From Accelerometer Data
+==========================================================
+A complete stand alone sever in flask for machine Leaning in Python. 
+The machine learning sever is complete with model build implementing randomforest.This server can be integrated to any application. Any request received by the server pointing to a data file, a reponse will be genereated by calssifing the activity based on the lable id provided.
+Currenlty, 3 activities,
+1:Drinkning
+2:Walking
+3:Reading
+
+The model can be tested with any data set,the server  can accept any public datafile. The file format is csv, sample foramt available in the project folder.
+
+
+
+Installation
+------------
+
+Dependencies
+~~~~~~~~~~~~
+
+scikit-learn requires:
+
+- Python (>= 2.7 or >= 3.4)
+- NumPy (>= 1.8.2)
+- SciPy (>= 0.13.3)
+- scikit-learn librabries (>=1.8.2)
+- flask
+- Matplotlib >= 1.3
+- pip
+- statistics
+- math
+- pandas
+- csv
+- statsmodels
+
+Pip is availabe in the python downloads home page. PIP can be used to install all the dependencies.
+
+
+User installation
+~~~~~~~~~~~~~~~~~
+
+If you already have a working installation of pip, all the dependencies can be instlalled by using ``pip`` ::
+
+    pip install --save <dependencies>
+like  
+
+    pip install scikit-learn
+
+The documentation includes more detailed `installation instructions for sckit-learn libraries
+<http://scikit-learn.org/stable/install.html>`_.
+
+The documentation includes more detailed `installation instructions for flask
+<http://flask.pocoo.org/docs/1.0/installation/>`_.
+
+
+Configuring Flask Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+After cloning the project using git clone,the server can be intialised using 
+ ``run`` :: flask run.
+ 
+ The environment variable  ``FLAK_APP`` has to be configured to point to the ``server.py`` file.
+ In windows cmd, use 
+ :: set FLASK_APP="server.py"
+
+  In windows power shell, use 
+
+ :: set $env:FLASK_APP=server.py
+ 
+ If the server needs to configured to listen to public ip, use
+ :: flask run --host(0.0.0.0)
+ 
+ It can also be configured internally in the server.py file setting app.host value to the required ip address.
+
+ 
+
+Configuring Web Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MachineLearning.java servlet in the project folder has to be deployed in the web server. This file is required to invoke the machine learning server and create an input file in appropriate format(csv).
+
+
+
+Source code
+~~~~~~~~~~~
+
+You can check the latest sources with the command::
+
+    git clone https://github.com/mayuguna/Activity-detection-using-Accelerometer
+
+
+Testing
+~~~~~~~
+Sampe data for testing is also provied in the folder DATA. 
+
+
+
+Help and Support
+----------------
+Name: sharath
+email: sarathms007@gmail.com
+
+Name: Abijih
+email: abhijithmanu@gmail.com
+
