@@ -83,18 +83,18 @@ The documentation includes more detailed `installation instructions for flask
 Configuring Flask Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 After cloning the project using git clone, the server can be initialized using 
- ``run`` :: flask run.
+		``run`` :: flask run.
  
  The environment variable ``FLAK_APP`` must be configured to point to the ``server.py`` file.
  In windows cmd, use 
- :: set FLASK_APP="server.py"
+		set FLASK_APP="server.py"
 
-  In windows power shell, use 
+In windows power shell, use 
 
- :: set $env:FLASK_APP=server.py
+		set $env:FLASK_APP=server.py
  
  If the server needs to configured to listen to public ip, use
- :: flask run --host(0.0.0.0)
+		flask run --host(0.0.0.0)
  
  It can also be configured internally in the server.py file setting app.host value to the required ip address.
 
